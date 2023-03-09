@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <link rel="stylesheet" href="../css/contactoII.css">
+</head>
+
+<body>
+    <header>
+        <img src="../img/incap.png" alt="" width="100" height="100" alt="incap">
+        <h1>FORMULARIO CONTACTO II</h1>
+    </header>
+    <section>
+        <form method="post" action="datosenvia.php">
+            <label for="">NOMBRE COMPLETO:</label><br>
+            <input type="text" size="30" title="Ingresa Tu Nombre Completo" name="nombre" autofocus required><br><br>
+            <hr>
+            <label for="">CORREO ELECTRONICO:</label><br>
+            <input type="email" placeholder="Ingresa Tu Email:usuario@dominio.com" size="40" title="Ingresa Tu Correo"
+                name="mail" required><br><br>
+            <hr>
+            <label for="">FECHA NACIMIENTO:</label><br>
+            <input type="date" name="fechanac" title="Ingresa Tu Fecha De Nacimiento"><br><br>
+            <hr>
+            <label for="">DESLIZA LA BARRA Y COLOQUE UN GRADO DE SATISFACCION DEL SERVICIO:</label><br>
+            <input type="range" min="1" max="10" title="Desliza La Barra Para Ingresar El Grado De Satisfaccion"
+                name="barra"><br><br>
+            <hr>
+            <label for="">SELECCIONA EL COLOR PREFERIDO</label><br>
+            <input type="color" value="#ffff00" title="Selecciona Tu Color Preferido" name="color"><br><br>
+            <hr>
+            <label for="">DIGITA TU EDAD</label><br>
+            <input type="number" min="1" max="120" title="Ingresa Tu Edad" name="edad"><br><br>
+            <hr>
+
+            <label for="">SELECCIONA UN ARCHIVO</label>
+            <input type="file" name="archivo">
+            <br><br><br>
+            <button type="submit" >Enviar<br><br>
+        </form>
+    </section>
+    <footer>
+        <p>Derechos Reservados &copy; 2023&#64; Alejandra Gutierrez</p>
+    </footer>
+</body>
+
+</html>
