@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+
+<body>
+    <header>
+        <img src="../img/incap.png" alt="" width="100" height="100" alt="incap">
+        <h1>FORMULARIOS Y LISTAS HTML</h1>
+
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Productos</li>
+            <li>Servicios</li>
+            <li>Contacto</li>
+        </ul>
+    </nav>
+    <section>
+        <form action="datos.php" method="post">
+            <fieldset>
+                <!-- Seccion Ingresar Nombre -->
+                <label for="">Nombre Completo: </label>
+                <input type="text" name="nombre" placeholder="&#9756; Ingrese Su Nombre Completo" required="">
+                <br><br>
+                <hr>
+
+                <!-- Seccion Email -->
+                <label for="">Email:</label>
+                <input type="email" name="email" placeholder="&#9746; Ingrese Su Email" required="">
+                <br><br>
+                <hr>
+
+                <!-- Seccion Ingresar Contraseña -->
+                <label for="">Contraseña:</label>
+                <input type="password" name="contraseña" placeholder="&#9745; Ingrese Su Contraseña" required="">
+                <br><br>
+                <hr>
+
+                <!-- Seccion De Hobbies -->
+                <label for="">Selecciona Tu Hobbies</label>
+                <br>
+                <input type="checkbox">Cine <br>
+                <input type="checkbox">Lectura <br>
+                <input type="checkbox">Deporte <br>
+                <br>
+                <hr>
+
+                <!-- Seccion De Estado Civil -->
+                <label for="">Estado Civil:</label> <br>
+                <input type="radio" value="casado" name="estcivil">Casado(a) <br>
+                <input type="radio" value="soltero" name="estcivil">Soltero(a) <br>
+                <input type="radio" value="viudo" name="estcivil">Viudo(a) <br>
+                <br> <br>
+                <hr>
+
+                <!-- Seccion Opcion De Lista -->
+                <label for="">Programas Tecnicos</label>
+                <select name="select">
+                    <option value="">Seleccione Programa:</option>
+                    <option value="">Sistemas</option>
+                    <option value="">Diseño Grafico</option>
+                    <option value="">Contabilidad</option>
+                </select>
+                <br><br>
+                <hr>
+
+                <!-- Seccion Comentarios -->
+                <label for="">Comentario:</label><br>
+                <textarea name="mensaje" id="" cols="40" rows="5"></textarea>
+            </fieldset>
+                <br><br>
+                <hr>
+            <!-- Seccion Botones Del Formulario -->
+            <button type="submit">Enviar</button>
+            <button type="reset">Cancelar</button>
+            <br><br>
+        </form>
+    </section>
+    <!-- Seccion De Pie De Pagina -->
+    <footer>
+        <p>Derechos Reservados &copy; 2023&#64; Alejandra Gutierrez</p>
+    </footer>
+</body>
+
+</html>
